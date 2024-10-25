@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SEST01 Website</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="row">
+            <div class="logo">
+                <img src="assets/logo-new.png" alt="OC_Logo" style="height: 75px; width: auto;">
+            </div>
+            <ul class="main-nav">
+                <li class="active">
+                    <a href="#">HOME</a>
+                    <a href="#">SERVICES</a>
+                    <a href="#">ABOUT</a>
+                    <a href="#">BLOG</a>
+                    <a href="#">CONTACT</a>
+                    <a href="#">FAQ</a>
+                </li>
+            </ul>
+        </div>
+        <div class="hero">
+            <h1>Ready for Action?</h1>
+            <div class="button">
+                <a href="#" class="btn btn-one" onclick="showPopup()">Watch Videos</a>
+                <a href="#" class="btn btn-two">Explore More</a>
+            </div>
+                        <!-- Popup Video -->
+            <div class="overlay" onclick="hidePopup()"></div>
+            <div class="popup" id="videoPopup">
+                <iframe 
+                    src="https://youtube.com/embed/E3IxgT80Ap0?si=Y9IYp6gXawuWUDd_" 
+                    title="YouTube video player" 
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </header>
+
+    <section class="contact grid-container">
+        <div class="contact-form grid-item">
+            <div class="contact-section-header">
+                <h2>Get in touch with us!</h2>
+            </div>
+            <form class="form">
+                <input type="text" name="fullname" placeholder="Fullname">
+                <input type="email" name="email"    placeholder="Email Address">
+                <input type="number" name="phonenumber" placeholder="Phone Number">
+                <textarea class="subject" name="subject" placeholder="Write your message here.."></textarea>
+                <input class="button" type="submit" value="Submit">
+            </form>
+        </div>
+    </section>
+</body>
+</html>
