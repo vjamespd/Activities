@@ -50,7 +50,7 @@ header {
     width: 100%;
 }
 
-h1 {
+h1.homeHeader {
     font-family: "Roboto", sans-serif;
     color: white;
     text-transform: uppercase;
@@ -162,3 +162,27 @@ h1 {
     background: rgba(0, 0, 0, 0.6);
     z-index: 999;
 }
+.blogHeader {
+    position: absolute;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    text-transform: uppercase;
+    font-size: 50px;
+    top: 100px;
+    left: 15%;
+}
+.blogContainer {
+    display: flex;
+    position: absolute;
+    top: 200px;
+    left: 280px;
+}
+
+.blogHTML,
+.blogCSS,
+.blogJS {
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+    margin: 5px;
+}
+
