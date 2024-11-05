@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expressions activity</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <p id="demo9"></p>
+    <p id="demo10"></p>
+
+    <script>
+        let x=10;
+        // Expression #1
+        let z1 = x==10;
+        document.getElementById("demo").innerHTML = "x == 10 is: " + z1;
+
+        // Expression #2
+        let z2 = x==="10";
+        document.getElementById("demo2").innerHTML = "x === " + "'10'" + " is: " + z2;
+
+        // Expression #3
+        let z3 = x===10;
+        document.getElementById("demo3").innerHTML = "x === 10 is: " + z3;
+
+        // Expression #4
+        let z4 = x != 10;
+        document.getElementById("demo4").innerHTML = "x != 10 is: " + z4;
+
+        // Expression #5
+        let z5 = x < 10;
+        document.getElementById("demo5").innerHTML = "x < 10 is: " + z5;
+
+        // Expression #6
+        let z6 = x > 10;
+        document.getElementById("demo6").innerHTML = "x > 10 is: " + z6;
+
+        // Expression #7
+        let z7 = x <= 10;
+        document.getElementById("demo7").innerHTML = "x <= 10 is: " + z7;
+
+        // Expression #8
+        let z8 = x >= 10 && x != 5;
+        document.getElementById("demo8").innerHTML = "x >= 10 && x != 5 is: " + z8;
+
+        // Expression #9
+        let z9 = x != 5 || x < 5;
+        document.getElementById("demo9").innerHTML = "x != 5 || x < 5 is: " + z9;
+
+        // Expression #10
+        let z10 = !(x > (5 + x));
+        document.getElementById("demo10").innerHTML = "!(x > (5 + X)) is: " + z10;
+        
+    </script>
+</body>
+</html>
