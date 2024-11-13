@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+    **Javascript and DOM**
+
+    --- The script element src attribute ---
+    * relative path (referenced locally) 
+    <script src="script.js"></script>
+
+    * absolute path (hosted somewhere else) 
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    * defer attribute - of a script tag that is a boolean attribute that is loaded but not executed until the entire HTML document is fully parsed.
+    <script src="script.js" defer></script>
+
+    * async attribute - are loaded synchronously as they appear in an HTML File. This attribute can used to load the scripts asychronously such as they will load the background asynchronously without blocking the html parser.
+    <script src="script.js" async></script>
+
+    --- Nodes and DOM tree ---
+    * HTML DOM (Document Object Model) - an interface between scripting languages and a web page's structure. The browser creates DOM for each webpage that it renders.
+
+    --- Elements and Methods ---
+    * removeChild() method - removes a specific child form a parent element by callingremoveChild() method.
+
+    // this example shows that we want to remove hotdog from grocery list //
+    const groceryList = document.getElementbyID('groceryList');
+    const hotdog = document.getElementbyID('hotdog');
+
+    groceryList.removeChild(hotdog);
+    -->
+
+    <!--element.parentNode Property - this is a property of an element that can be returned to a reference to its direct parent -->
+    <div id="parent">
+        <a id="first-child">Sample text for child</a>
+        <a id="second-child">more sample text for child</a>
+    </div>
+    <script>
+        const firstChild = document.getElementById('first-child');
+        firstChild.parentNode; //reference to the parent div
+    </script>
+
+    <!-- document.createElement() Method - creates and returns a reference to a new element node with specified tag name-->
+     <script>
+        const newButton = document.createElement("button");
+        newButton.innerText = "This is a new button";
+        // append to the body
+        document.body.appendChild(newButton);
+     </script>
+
+    <!-- element.innerHTML Property - can be used to access the HTML markup that makes up an element's content -->
+     <box>
+        <p>Hello there!</p>
+     </box>
+     <script>
+        const box = document.querySelector('box');
+        // reassign the value
+        box.innerHTML = '<p>Good bye!</p>'
+     </script>
+
+</body>
+</html>
