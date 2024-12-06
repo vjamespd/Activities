@@ -21,8 +21,8 @@ const MoodBoard = () => {
     <Row>
       {moods.map((mood, index) => (
         <Col key={index} md={4} className="mb-4">
-          <Card>
-            <Card.Img variant="top" src={mood.imageURL} alt="Mood Image" />
+          <Card style={cardStyle}>
+            <Card.Img variant="top" src={mood.imageURL} alt="Mood Image" style={imageStyle} />
             <Card.Body>
               <Card.Text>{mood.caption}</Card.Text>
             </Card.Body>
@@ -31,6 +31,15 @@ const MoodBoard = () => {
       ))}
     </Row>
   );
+};
+
+const cardStyle = {
+  borderRadius: '10px',
+  boxShadow: '0 4px 8px rgba(0,0,0,0.1)',
+};
+
+const imageStyle = {
+  borderRadius: '10px 10px 0 0',
 };
 
 export default MoodBoard;

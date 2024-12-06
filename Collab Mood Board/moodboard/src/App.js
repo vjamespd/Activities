@@ -2,8 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import MoodForm from './moodForm';
 import MoodBoard from './moodBoard';
-import './App.css';
-
+import './App.css';  // Custom styles
 
 function App() {
   return (

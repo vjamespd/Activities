@@ -19,7 +19,7 @@ const MoodForm = () => {
   };
 
   return (
-    <Form onSubmit={handleSubmit} style={{ marginBottom: '20px' }}>
+    <Form onSubmit={handleSubmit} style={formStyle}>
       <Form.Group controlId="formImageURL">
         <Form.Label>Enter Image URL</Form.Label>
         <Form.Control 
@@ -27,6 +27,7 @@ const MoodForm = () => {
           value={imageURL} 
           onChange={(e) => setImageURL(e.target.value)} 
           required 
+          style={inputStyle}
         />
       </Form.Group>
       <Form.Group controlId="formCaption">
@@ -36,13 +37,32 @@ const MoodForm = () => {
           value={caption} 
           onChange={(e) => setCaption(e.target.value)} 
           required 
+          style={inputStyle}
         />
       </Form.Group>
-      <Button variant="primary" type="submit" style={{ marginTop: '10px' }}>
+      <Button variant="primary" type="submit" style={buttonStyle}>
         Add to Board
       </Button>
     </Form>
   );
+};
+
+const formStyle = {
+  backgroundColor: '#f7f7f7',
+  padding: '20px',
+  borderRadius: '10px',
+  boxShadow: '0 4px 8px rgba(0,0,0,0.1)',
+  marginBottom: '20px',
+};
+
+const inputStyle = {
+  marginBottom: '10px',
+};
+
+const buttonStyle = {
+  backgroundColor: '#007bff',
+  borderColor: '#007bff',
+  marginTop: '10px',
 };
 
 export default MoodForm;
